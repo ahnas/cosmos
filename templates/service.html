@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Service{% endblock %}
+
+{% block content %}
+
+
+<div class="container">
+    <div class="row text-center" style="justify-content: center;">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+            <h3>Fitness Service</h3>
+        
+                <img width="100%" src="{% static 'assets/img/fitness.jpg' %}" alt="">
+                <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisfsafsdgvjhgvbjhgdicing elit.</p>
+            
+            <ul>
+            <li  class="has-submenu gmenu "><a class="gmenuu" href="#/"><span>Requset a Service  </span></a>
+                <ul class="submenu-nav"> 
+                    <li><a href="{% url 'web:fitnessServiceBranch' %}"><span>Branch Service</span></a></li>
+                    <li><a href="{% url 'web:fitnessServiceOnsite' %}"><span>On-site service</span></a></li>
+                    
+                </ul>
+            </li>
+            </ul>
+
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+            <h3>Cycle Service</h3>
+            <img width="100%" height="100%" src="{% static 'assets/img/cycle.jpg' %}" alt="">
+            <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisfsafsdgvjhgvbjhgdicing elit.</p>
+
+            <ul>
+            <a class="gmenuu" href="{% url 'web:cycleservice' %}">Request a Service</a>
+            </ul>
+
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+            <h3>Shuttle Service</h3>
+            <img width="100%" height="100%" src="{% static 'assets/img/shuttle.jpg' %}" alt="">
+            <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisfsafsdgvjhgvbjhgdicing elit.</p>
+
+            <ul>
+            <a class="gmenuu" href="{% url 'web:shuttleservice' %}">Request a Service</a>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}
+
+
+
+{% block javascript %}
+
+{% endblock %}
